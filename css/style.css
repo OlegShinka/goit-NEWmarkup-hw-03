@@ -1,0 +1,306 @@
+body {
+    color: var(--SLATE-color);
+    background-color: var(--WHITE-color);
+    font-family: "Roboto", sans-serif;
+
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    padding-left: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+:root {
+    --NAVY-BLUE-color: #2E2F42;
+    --WHITE-color: #ffffff;
+    --SLATE-color: #434455;
+    /*body text*/
+    --IRIS-color: #4D5AE5;
+    --CORN-FLOWER-color: #E7E9FC;
+    --CLOUD-color: #F4F4FD;
+    --OCEAN-color: #404BBF;
+    --FONT-LOGO: "Raleway", sans-serif;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* HEADER */
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-list {
+    display: flex;
+    gap: 40px;
+    margin-left: 76px;
+}
+
+.link.logo {
+    color: var(--IRIS-color);
+    font-family: var(--FONT-LOGO);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.logo-header {
+    color: var(--NAVY-BLUE-color);
+
+}
+
+.nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--NAVY-BLUE-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--OCEAN-color);
+}
+
+.address {
+    font-style: normal;
+}
+
+.nav-address {
+    display: flex;
+    gap: 40px;
+}
+
+.address-link {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--SLATE-color);
+    letter-spacing: 0.02em;
+}
+
+.address-link:hover,
+.address-link:focus {
+    color: var(--OCEAN-color);
+    text-decoration: underline;
+}
+
+/* section first HERO */
+.hero {
+    background-color: var(--NAVY-BLUE-color);
+
+}
+
+.hero-title {
+    color: var(--WHITE-color);
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.hero-button {
+    display: block;
+    background-color: var(--IRIS-color);
+    color: var(--WHITE-color);
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    border-radius: 4px;
+    border-width: 0;
+    padding: 16px 32px 16px 32px;
+    margin: 0 auto;
+
+
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--OCEAN-color);
+}
+
+/* section second FEATURES */
+.features-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--NAVY-BLUE-color);
+}
+
+.features-text {
+    /* font-size: 16px; */
+    /* font-weight: 400; */
+    line-height: 1.5;
+    color: var(--SLATE-color);
+    letter-spacing: 0.02em;
+}
+
+/* section third DOING */
+.doing-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--NAVY-BLUE-color);
+
+}
+
+/* section four TEAM */
+.team {
+    background-color: var(--CLOUD-color);
+}
+
+.team-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--NAVY-BLUE-color);
+}
+
+
+.card-team {
+    background-color: var(--WHITE-color);
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+}
+
+.card-text {
+    /* font-size: 16px; */
+    /* font-weight: 400; */
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--SLATE-color);
+}
+
+
+
+/* footer */
+/* section SLOGAN */
+.footer {
+    background-color: var(--NAVY-BLUE-color);
+}
+
+.logo-footer {
+    font-family: var(--FONT-LOGO);
+    color: var(--CLOUD-color);
+}
+
+.slogan-text {
+    /* font-size: 16px; */
+    /* font-weight: 400; */
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--CLOUD-color)
+}
+
+/* Portfolio */
+
+.list.filter {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.btn-menu {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--IRIS-color);
+    background-color: var(--CLOUD-color);
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid var(--CORN-FLOWER-color);
+    padding: 12px 24px 12px 24px;
+}
+
+.btn-menu:hover,
+.btn-menu:focus {
+    color: var(--WHITE-color);
+    background-color: var(--OCEAN-color);
+}
+
+.benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* відстань між рядками та колонками     */
+    row-gap: 48px;
+    column-gap: 24px;
+
+}
+
+.card-benefits {
+    border: 1px solid var(--CORN-FLOWER-color);
+    /* розрахунок ширини флекс елемента  */
+    /* 100% - кількість_проміжків_у_рядку * значення_одного_проміжку) / кількість_елементів_у_рядку */
+    width: calc((100% - 48px) / 3);
+}
+
+.card-title {
+    color: var(--NAVY-BLUE-color);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.card-desc {
+    color: var(--SLATE-color);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
