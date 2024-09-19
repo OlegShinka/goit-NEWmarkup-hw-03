@@ -95,7 +95,7 @@ img {
 .nav-list {
     display: flex;
     gap: 40px;
-    margin-left: 76px;
+
 }
 
 .link.logo {
@@ -108,6 +108,7 @@ img {
     text-transform: uppercase;
     padding-top: 24px;
     padding-bottom: 24px;
+    margin-right: 76px;
 }
 
 .logo-header {
@@ -121,6 +122,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--NAVY-BLUE-color);
+    padding: 24px 0;
 
 
 
@@ -165,6 +167,7 @@ img {
 .hero-title {
     color: var(--WHITE-color);
     font-size: 56px;
+
     font-weight: 700;
     line-height: 1.07;
     /* text-align: center; */
@@ -178,6 +181,7 @@ img {
 
 .hero-button {
     display: block;
+    min-width: 169px;
     background-color: var(--IRIS-color);
     color: var(--WHITE-color);
     font-family: inherit;
@@ -186,8 +190,9 @@ img {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+    border: none;
     border-radius: 4px;
-    border-width: 0;
+
     padding: 16px 32px 16px 32px;
     margin: 0 auto;
 
@@ -249,6 +254,10 @@ img {
     gap: 24px;
 }
 
+.doing-item {
+    flex-basis: calc((100% - 48px) / 3);
+}
+
 .doing-title {
     font-size: 36px;
     font-weight: 700;
@@ -257,7 +266,7 @@ img {
     text-align: center;
     text-transform: capitalize;
     color: var(--NAVY-BLUE-color);
-    margin-bottom: 76px;
+    margin-bottom: 72px;
 
 }
 
@@ -285,33 +294,39 @@ img {
 }
 
 
-.card-team {
+.person-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 32px;
     background-color: var(--WHITE-color);
+    border-radius: 0px 0px 4px 4px;
 }
 
-.team-img {
+.person-img {
     margin-bottom: 32px;
 }
 
-.card-title {
+.person-desc {
+    margin: 0 auto;
+    padding: 32px 0;
+}
+
+.person-name {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
+    text-align: center;
 
 }
 
-.card-text {
-    /* font-size: 16px; */
-    /* font-weight: 400; */
+.person-position {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--SLATE-color);
+    text-align: center;
 }
 
 
@@ -333,7 +348,7 @@ img {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .logo-footer-span {
@@ -353,13 +368,19 @@ img {
 
 /* Portfolio */
 
-
+.portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+    padding-right: 0;
+    padding-left: 0;
+}
 
 .list.filter {
     display: flex;
     justify-content: center;
     gap: 24px;
-    padding-top: 96px;
+    margin-bottom: 72px;
+
 }
 
 .btn-menu {
@@ -381,6 +402,7 @@ img {
 .btn-menu:focus {
     color: var(--WHITE-color);
     background-color: var(--OCEAN-color);
+    border: 1px solid transparent;
 }
 
 .benefits-list {
@@ -389,13 +411,10 @@ img {
     /* відстань між рядками та колонками     */
     row-gap: 48px;
     column-gap: 24px;
-    padding-top: 72px;
-    padding-bottom: 120px;
-
 }
 
 .card-benefits {
-    border: 1px solid var(--CORN-FLOWER-color);
+    border-bottom: 1px solid var(--CORN-FLOWER-color);
     /* розрахунок ширини флекс елемента  */
     /* 100% - кількість_проміжків_у_рядку * значення_одного_проміжку) / кількість_елементів_у_рядку */
     width: calc((100% - 48px) / 3);
@@ -406,8 +425,9 @@ img {
 }
 
 .card-text {
-    padding-left: 16px;
-    padding-bottom: 32px;
+    padding: 32px 16px;
+    border: 1px solid var(--CORN-FLOWER-color);
+    border-top: none;
 }
 
 .card-title {
